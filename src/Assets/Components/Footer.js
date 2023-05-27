@@ -48,6 +48,7 @@ function Footer() {
               );
             })}
         </ul>
+        <p>Copyright © 2023 - Vietnam-Korea University of Information and Communication Technology - The University of Danang</p>
     </div>
   );
 }
