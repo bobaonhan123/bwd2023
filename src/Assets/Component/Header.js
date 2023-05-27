@@ -24,14 +24,15 @@ function Header() {
         else setBarClass('invisible');
     }
 
+    
   return (
     <div className={HeaderClass}>
         <img src={logo} alt='logo'/>
         <ul className="navbar">
-            <li key='1'><a href="/">Trang chủ</a></li>
-            <li key='2'><a href="/News">Thông tin</a></li>
+            <li key='1'><a href="/" className={"/"===window.location.pathname?"curr-page":""}>Trang chủ</a></li>
+            <li key='2'><a href="/News" className={"/News"===window.location.pathname?"curr-page":""}>Thông tin</a></li>
             <li key='3'><a href="/">Phòng chống</a></li>
-            <li key='4'><a href="/about-us">Về chúng tôi</a></li>
+            <li key='4'><a href="/about-us" className={"/about-us"===window.location.pathname?"curr-page":""}>Về chúng tôi</a></li>
         </ul>
         <img src={bar} alt='bar' className='bar-icon' onClick={handleBar}/>
         <ul className={barClass}>
