@@ -26,12 +26,13 @@
 
 .Header .navbar li {
     width: 120px;
-    transition: 0.5s;
+    
     font-family: Montserrat, sans-serif;
     font-weight: bold;
 }
 
 .Header .navbar li a {
+    transition: 0.5s;
     text-decoration: none;
     color: rgb(226, 226, 226);
 }
@@ -41,7 +42,7 @@
     height: 100px;
 }
 
-.Header .navbar li:hover {
+.Header .navbar li:hover a {
     color: #2f9e44;
 }
 
@@ -52,6 +53,6 @@
     
 }
 
-.white-header li a {
-    color: rgb(92, 92, 92);
+.white-header .navbar li a {
+    color: rgba(78, 78, 78, 0.977);
 }

@@ -5,7 +5,8 @@ function MainPage() {
     
   return (
     <div className="main-page">
-        <div></div>
+        <div className='intro-img'></div>
+        <div className='intro-page'></div>
     </div>
   );
 }
