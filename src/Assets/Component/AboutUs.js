@@ -1,8 +1,7 @@
-import { useState } from "react";
-import logo from '../Img/logo.svg';
+
 import '../CSS/AboutUs.css';
 
-function Footer() {
+function AboutUs() {
     
   return (
     <div className="about-us">
@@ -11,4 +10,4 @@ function Footer() {
   );
 }
 
-export default Footer;
+export default AboutUs;

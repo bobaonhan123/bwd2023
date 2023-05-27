@@ -1,8 +1,7 @@
-import { useState } from "react";
-import logo from '../Img/logo.svg';
+
 import '../CSS/MainPage.css';
 
-function Footer() {
+function MainPage() {
     
   return (
     <div className="main-page">
@@ -11,4 +10,4 @@ function Footer() {
   );
 }
 
-export default Footer;
+export default MainPage;

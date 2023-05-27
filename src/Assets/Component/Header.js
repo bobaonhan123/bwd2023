@@ -18,9 +18,9 @@ function Header() {
     <div className={HeaderClass}>
         <img src={logo} alt='logo'/>
         <ul className="navbar">
-            <li key='1'><a>Trang chủ</a></li>
-            <li key='2'><a>Thông tin</a></li>
-            <li key='3'><a>Về chúng tôi</a></li>
+            <li key='1'><a href="/">Trang chủ</a></li>
+            <li key='2'><a href="/">Thông tin</a></li>
+            <li key='3'><a href="/about-us">Về chúng tôi</a></li>
         </ul>
     </div>
   );
