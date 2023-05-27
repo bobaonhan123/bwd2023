@@ -25,18 +25,30 @@
     justify-content: space-around;
 }
 
+.Footer>p {
+    text-align: center;
+}
+
 .Footer>ul>li .personal-component {
     list-style: none;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    width: 200px;
 }
 
 .Footer>ul>li .personal-component .logo-list {
     display: flex;
     flex-direction: row;
+    justify-content:center;
+}
+
+.Footer>ul>li .personal-component p {
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 .Footer>ul>li .personal-component .logo-list img {
-    width: 25px;
-    height: 25px;
+    width: 40px;
+    height: 40px;
 }
