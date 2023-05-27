@@ -24,14 +24,15 @@
     justify-content: space-between;
 }
 
-.Header .navbar li {
+.Header .navbar>li {
     width: 120px;
-    
+    display: flex;
+    justify-content: center;
     font-family: Montserrat, sans-serif;
     font-weight: bold;
 }
 
-.Header .navbar li a {
+.Header .navbar>li a {
     transition: 0.5s;
     text-decoration: none;
     color: rgb(226, 226, 226);
@@ -42,7 +43,7 @@
     height: 100px;
 }
 
-.Header .navbar li:hover a {
+.Header .navbar>li:hover a,.curr-page a {
     color: #2f9e44;
 }
 
@@ -53,6 +54,10 @@
     
 }
 
-.white-header .navbar li a {
+.white-header .navbar>li a {
     color: rgba(78, 78, 78, 0.977);
+}
+
+.curr-page {
+    
 }
