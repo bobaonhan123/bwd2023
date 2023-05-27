@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Header {
+    display: flex;
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top:0;
+    background: transparent;
+    border-bottom: 1px solid rgba(140, 140, 140, 0.778);
+    align-items: center;
+    justify-content: space-around;
+    transition: 0.3s;
+}
+
+.Header .navbar {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Header .navbar li {
+    width: 120px;
+    transition: 0.5s;
+    font-family: Montserrat, sans-serif;
+}
+
+.Header img {
+    width: 100px;
+    height: 100px;
+}
+
+.Header .navbar li:hover {
+    color: #2f9e44;
+}
+
+.white-header {
+    background: unset;
+    background-color: white;
+    height: 70px;
+}
