@@ -48,7 +48,7 @@
     height: 100px;
 }
 
-.Header .navbar>li:hover a,.Header .navbar>li a.curr-page{
+.Header .navbar>li:hover a,.Header .navbar>li a.curr-page,.Header .mobile-nav>li a.curr-page{
     color: #2f9e44;
 }
 
@@ -91,7 +91,6 @@
     align-items: flex-end;
     width: 100%;
     position: absolute;
-    top:70px;
     right: -100%;
     background-color: white;
     padding: 20px;
