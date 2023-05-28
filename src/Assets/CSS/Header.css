@@ -92,24 +92,33 @@
     width: 100%;
     position: absolute;
     top:70px;
-    right: 0;
-    width: 70%;
+    right: -100%;
     background-color: white;
     padding: 20px;
+    transition: 0.25s;
 }
 
 .mobile-nav li {
     list-style: none;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mobile-nav li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:0;
 }
 
 .mobile-nav li a {
     text-decoration: none;
-    padding-top: 10px;
     font-size: 1.6rem;
     font-weight: bold;
     color: rgb(44, 44, 44);
 }
 
-.invisible {
-    display: none;
+.active-nav {
+    right: 0;
 }

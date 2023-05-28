@@ -16,13 +16,19 @@ function Header() {
     }
     window.onscroll=handleScroll;
 
-    var [barClass,setBarClass]=useState('invisible');
+    var [barClass,setBarClass]=useState('mobile-nav');
     let handleBar=()=> {
-        if(barClass==='invisible') {
+        if(barClass==='mobile-nav') {
+            setBarClass('mobile-nav active-nav');
+        }
+        else setBarClass('mobile-nav');
+    }
+
+    window.addEventListener("resize", ()=>{
+        if(window.innerWidth>600) {
             setBarClass('mobile-nav');
         }
-        else setBarClass('invisible');
-    }
+    });
 
     
   return (
