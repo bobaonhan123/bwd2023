@@ -11,7 +11,15 @@ function MainPage() {
             
           </div>
         </div>
-        
+        <div className='news-page'>
+          
+        </div>
+        <div className='prevention-page'>
+          
+        </div>
+        <div className='contact-page'>
+          
+        </div>
     </div>
   );
 }
