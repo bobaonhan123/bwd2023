@@ -1,5 +1,5 @@
 
-import '../CSS/Prevention.css';
+import '../../CSS/Prevention.css';
 
 function Prevention() {
     

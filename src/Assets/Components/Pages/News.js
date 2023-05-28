@@ -1,5 +1,5 @@
 
-import '../CSS/News.css';
+import '../../CSS/News.css';
 
 function News() {
     

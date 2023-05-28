@@ -1,5 +1,5 @@
 
-import '../CSS/MainPage.css';
+import '../../CSS/MainPage.css';
 
 function MainPage() {
     
