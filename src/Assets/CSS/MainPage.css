@@ -69,4 +69,13 @@
         margin: 150px auto;
         width: 90%;
     }
+
+    .intro-page .intro-contentpane h1 {
+        font-size: 2.5rem;
+        
+    }
+
+    .intro-page .intro-contentpane p {
+        font-size: 1.6rem;
+    }
 }
