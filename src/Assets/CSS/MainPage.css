@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
+    font-family: Montserrat, sans-serif;
 }
 
 
@@ -29,6 +29,21 @@
     height: 60vh;
     margin: 25vh auto auto 10%;
     border-radius: 20px;
+    padding: 30px 20px;
+}
+
+.intro-page .intro-contentpane h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding:20px;
+    color: white;
+}
+
+.intro-page .intro-contentpane p {
+    padding:20px;
+    font-size: 2em;
+    color: #fefefecc;
 }
 
 .news-page {
@@ -47,4 +62,11 @@
     width: 100%;
     height: 100vh;
     background-color: transparent;
+}
+
+@media only screen and (max-width: 800px) {
+    .intro-page .intro-contentpane {
+        margin: 150px auto;
+        width: 90%;
+    }
 }
