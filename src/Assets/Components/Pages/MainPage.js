@@ -1,6 +1,6 @@
 
 import '../../CSS/MainPage.css';
-
+import NewsComponent from '../LittleComponent/NewsComponent';
 function MainPage() {
     
   return (
@@ -13,7 +13,13 @@ function MainPage() {
           </div>
         </div>
         <div className='news-page'>
-          
+          <h1>Tin tức</h1>
+          <div className='news-pane'>
+            <NewsComponent />
+            <NewsComponent />
+            <NewsComponent />
+          </div>
+          <a className='more' href='/News'>Xem thêm</a>
         </div>
         <div className='prevention-page'>
           
