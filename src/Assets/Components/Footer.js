@@ -22,7 +22,7 @@ function Footer() {
       id:'3',
       name:'pthinh',
       facebook:'https://www.facebook.com/ting12q',
-      github:'https://github.com/bobaonhan123'
+      github:'https://github.com/vkutin12q'
     },
     {
       id:'4',

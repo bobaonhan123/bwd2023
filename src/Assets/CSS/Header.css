@@ -72,8 +72,8 @@
 
 @media only screen and (max-width: 600px) {
     .Header {
-        background-color: white;
         justify-content: space-between;
+        padding: 0 15px;
     }
 
     .Header .navbar {
