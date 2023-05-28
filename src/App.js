@@ -1,11 +1,11 @@
 import { Routes, Route } from 'react-router-dom'; 
 
-import Header from './Assets/Component/Header';
-import Footer from './Assets/Component/Footer';
-import MainPage from './Assets/Component/MainPage';
-import AboutUs from './Assets/Component/AboutUs';
-import Prevention from './Assets/Component/Prevention';
-import News from './Assets/Component/News';
+import Header from './Assets/Components/Header';
+import Footer from './Assets/Components/Footer';
+import MainPage from './Assets/Components/MainPage';
+import AboutUs from './Assets/Components/AboutUs';
+import Prevention from './Assets/Components/Prevention';
+import News from './Assets/Components/News';
 
 function App() {
   return (

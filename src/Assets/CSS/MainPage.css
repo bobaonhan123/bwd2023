@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 
@@ -23,8 +24,8 @@
 
 .intro-page .intro-contentpane {
     background: rgba(49, 49, 49, 0.66);
-    width: 100%;
-    max-width: 800px;
-    height: 550px;
-    margin: 150px auto auto 100px;
+    width: 60%;
+    height: 60vh;
+    margin: 25vh auto auto 10%;
+    border-radius: 20px;
 }
