@@ -37,7 +37,7 @@ function Header() {
     
   return (
     <div className={HeaderClass}>
-        <img src={logo} alt='logo'/>
+        <a href="/"><img src={logo} alt='logo'/></a>
         <ul className="navbar">
             <li key='1'><a href="/" className={"/"===window.location.pathname?"curr-page":""}>Trang chủ</a></li>
             <li key='2'><a href="/News" className={"/News"===window.location.pathname?"curr-page":""}>Thông tin</a></li>
