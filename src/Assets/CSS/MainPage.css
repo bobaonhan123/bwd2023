@@ -74,7 +74,13 @@
     background-color: transparent;
 }
 
-
+.news-pane {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
 
 @media only screen and (max-width: 800px) {
     .intro-page .intro-contentpane {
