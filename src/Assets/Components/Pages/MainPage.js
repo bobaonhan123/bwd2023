@@ -13,7 +13,7 @@ function MainPage() {
           </div>
         </div>
         <div className='news-page'>
-          <h1>Tin tức</h1>
+          <h1 className='title'>Tin tức</h1>
           <div className='news-pane'>
             <NewsComponent />
             <NewsComponent />

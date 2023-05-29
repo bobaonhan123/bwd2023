@@ -16,6 +16,7 @@
     align-items: center;
     justify-content: space-around;
     transition: 0.3s;
+    z-index: 999;
 }
 
 .Header .navbar {

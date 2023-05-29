@@ -30,6 +30,8 @@
     margin: 25vh auto auto 10%;
     border-radius: 20px;
     padding: 30px 20px;
+    backdrop-filter: blur(5px);
+    z-index: 0;
 }
 
 .intro-page .intro-contentpane h1 {
@@ -50,6 +52,14 @@
     width: 100%;
     height: 100vh;
     background-color: white;
+    padding: 50px;
+}
+
+.news-page>.title {
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 3rem;
+    text-transform: uppercase;
 }
 
 .prevention-page {
@@ -64,6 +74,8 @@
     background-color: transparent;
 }
 
+
+
 @media only screen and (max-width: 800px) {
     .intro-page .intro-contentpane {
         margin: 150px auto;
@@ -71,11 +83,13 @@
     }
 
     .intro-page .intro-contentpane h1 {
-        font-size: 2.5rem;
+        font-size: 2.4rem;
+        padding: 10px;
         
     }
 
     .intro-page .intro-contentpane p {
         font-size: 1.6rem;
+        padding: 10px;
     }
 }
