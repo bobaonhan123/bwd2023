@@ -40,16 +40,16 @@ function Header() {
         <a href="/"><img src={logo} alt='logo'/></a>
         <ul className="navbar">
             <li key='1'><a href="/" className={"/"===window.location.pathname?"curr-page":""}>Trang chủ</a></li>
-            <li key='2'><a href="/News" className={"/News"===window.location.pathname?"curr-page":""}>Thông tin</a></li>
-            <li key='3'><a href="/Prevention" className={"/Prevention"===window.location.pathname?"curr-page":""}>Phòng chống</a></li>
-            <li key='4'><a href="/about-us" className={"/about-us"===window.location.pathname?"curr-page":""}>Về chúng tôi</a></li>
+            <li key='2'><a href="/News" className={window.location.pathname.includes("/News")?"curr-page":""}>Thông tin</a></li>
+            <li key='3'><a href="/Prevention" className={window.location.pathname.includes("/Prevention")?"curr-page":""}>Phòng chống</a></li>
+            <li key='4'><a href="/about-us" className={window.location.pathname.includes("/about-us")?"curr-page":""}>Về chúng tôi</a></li>
         </ul>
         <img src={bar} alt='bar' className='bar-icon' onClick={handleBar}/>
         <ul className={barClass} style={mobileNavStyle}>
             <li key='1'><a href="/" className={"/"===window.location.pathname?"curr-page":""}>Trang chủ</a></li>
-            <li key='2'><a href="/News" className={"/News"===window.location.pathname?"curr-page":""}>Thông tin</a></li>
-            <li key='3'><a href="/Prevention" className={"/Prevention"===window.location.pathname?"curr-page":""}>Phòng chống</a></li>
-            <li key='4'><a href="/about-us" className={"/about-us"===window.location.pathname?"curr-page":""}>Về chúng tôi</a></li>
+            <li key='2'><a href="/News" className={window.location.pathname.includes("/News")?"curr-page":""}>Thông tin</a></li>
+            <li key='3'><a href="/Prevention" className={window.location.pathname.includes("/Prevention")?"curr-page":""}>Phòng chống</a></li>
+            <li key='4'><a href="/about-us" className={window.location.pathname.includes("/about-us")?"curr-page":""}>Về chúng tôi</a></li>
         </ul>
     </div>
   );

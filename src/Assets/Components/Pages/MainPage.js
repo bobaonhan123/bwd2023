@@ -1,4 +1,3 @@
-import { useState } from 'react';
 
 import '../../CSS/MainPage.css';
 import NewsComponent from '../LittleComponent/NewsComponent';
@@ -6,10 +5,7 @@ import NewsData from '../../Data/NewsData';
 
 function MainPage() {
     const DataArr=NewsData();
-    const [NewsWidth,setNewsWidth]=useState(window.innerWidth>600?'30%':'90%');
-    window.onresize=()=>{
-      setNewsWidth(window.innerWidth>600?'30%':'90%');
-    };
+    
   return (
     <div className="main-page">
         <div className='intro-img'></div>
@@ -27,7 +23,7 @@ function MainPage() {
           <h1 className='title'>Tin tức</h1>
           <div className='news-pane'>
             {DataArr.map((data)=>{
-              return (<NewsComponent data={data} Width={NewsWidth}/>);
+              return (<NewsComponent data={data}/>);
                           })}
           </div>
           <a className='more' href='/News'>Xem thêm</a>

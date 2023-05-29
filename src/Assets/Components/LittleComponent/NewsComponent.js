@@ -1,7 +1,7 @@
 import '../../CSS/NewsComponent.css';
-function NewsComponent({data,Width}) {
+function NewsComponent({data}) {
   return (
-    <div className="news-component" style={{width:Width}}>
+    <div className="news-component">
       <a href={data.URL}>
        <img src={data.imageURL} alt=""/>
        <h2>{data.title}</h2>
