@@ -9,7 +9,7 @@ const data =[
 Giới chức địa phương cho biết, nhiều khả năng vụ cháy rừng này là hành động có chủ ý, tuy nhiên không cho biết thêm thông tin chi tiết.
 
 Năm ngoái, Tây Ban Nha ghi nhận gần 500 vụ cháy rừng, con số cao kỷ lục.`,
-        imageURL:'../Data/Img/News/ID1.webp'
+        imageURL:'./PublicAssets/News/ID1.webp'
     },
     {
         id:2,
@@ -23,7 +23,7 @@ Năm ngoái, Tây Ban Nha ghi nhận gần 500 vụ cháy rừng, con số cao k
         Giá dầu thô nặng của Canada đã tăng lên các mức cao do những quan ngại về các vụ cháy rừng.
         
         Chính quyền tỉnh Alberta cho biết, trên toàn tỉnh đang xảy ra khoảng 90 vụ cháy rừng, trong đó 23 vụ ngoài tầm kiểm soát, buộc khoảng 20.000 người dân phải sơ tán.`,
-        imageURL:'../Data/Img/News/ID2.webp'
+        imageURL:'./PublicAssets/News/ID2.webp'
     },
     {
         id:3,
@@ -49,7 +49,7 @@ Năm ngoái, Tây Ban Nha ghi nhận gần 500 vụ cháy rừng, con số cao k
         Bố trí canh phòng 24/24 giờ tại những khu vực trọng điểm, khi phát hiện đám cháy phải khẩn trương huy động lực lượng, triển khai ngay các biện pháp chữa cháy, xử lý triệt để đám cháy nhằm hạn chế tới mức thấp nhất thiệt hại...
         
         Cùng với việc ngăn chặn hiệu quả, tận gốc các hành vi có thể gây cháy rừng, các lực lượng chủ động phương châm “4 tại chỗ”; chính quyền các địa phương, các cơ quan nhà nước có thẩm quyền cần xử lý nghiêm đối tượng vi phạm theo quy định của pháp luật và trách nhiệm của người đứng đầu do buông lỏng quản lý để xảy ra cháy rừng…`,
-        imageURL:'../Data/Img/News/ID3.jpg'
+        imageURL:'./PublicAssets/News/ID3.jpg'
     }
 
 ];
