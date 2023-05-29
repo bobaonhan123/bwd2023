@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom'; 
+import { Routes, Route } from 'react-router-dom';
 
 import Header from './Assets/Components/Header';
 import Footer from './Assets/Components/Footer';
@@ -9,8 +9,8 @@ import News from './Assets/Components/Pages/News';
 
 function App() {
   return (
-    <div className="App">
-      <Header/>
+    <>
+      <Header />
       <Routes>
         <Route path='/' element={<MainPage />} />
         <Route path='/News' element={<News />} />
@@ -18,7 +18,7 @@ function App() {
         <Route path='/about-us' element={<AboutUs />} />
       </Routes>
       <Footer />
-    </div>
+    </>
   );
 }
 
