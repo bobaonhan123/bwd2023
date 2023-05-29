@@ -60,26 +60,59 @@
     padding: 1.5rem;
     font-size: 3rem;
     text-transform: uppercase;
+    color: rgb(255, 255, 255);
 }
 
-.prevention-page {
-    width: 100%;
-    height: 100vh;
-    background-color: #f7f7f7;
-}
-
-.contact-page {
-    width: 100%;
-    height: 100vh;
+.news-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
     background-color: transparent;
 }
 
 .news-pane {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
     flex-wrap: wrap;
     overflow: hidden;
+    height: 50vh;
+    
+}
+
+.news-page>a {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    height: 50px;
+    width: 200px;
+    font-size: bold;
+    color: white;
+    background: linear-gradient(90deg, #659999, #f4791f);
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+.news-page>a:hover {
+    background: linear-gradient(90deg, #f4791f,#659999);
+}
+
+
+
+.prevention-page {
+    width: 100%;
+    height: 100vh;
+    background-color: #d0d0d0;
+}
+
+.contact-page {
+    width: 100%;
+    height: 100vh;
+    background-color: white;
 }
 
 @media only screen and (max-width: 800px) {
@@ -97,5 +130,14 @@
     .intro-page .intro-contentpane p {
         font-size: 1.6rem;
         padding: 10px;
+    }
+    .news-pane {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        overflow: hidden;
+        height: 50vh;
     }
 }
