@@ -52,6 +52,11 @@
     color: #2f9e44;
 }
 
+.Header .mobile-nav>li a.curr-page{
+    background-color: #01ff302b;
+    border-radius: 10px ;
+}
+
 .white-header {
     background: unset;
     background-color: white;
@@ -89,12 +94,14 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    width: 100%;
+    width: 95%;
     position: absolute;
     right: -100%;
-    background-color: white;
-    padding: 20px;
+    background-color: rgba(170, 170, 170, 0.437);
+    padding: 20px 0 20px 5%;
     transition: 0.25s;
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
 }
 
 .mobile-nav li {
@@ -102,16 +109,18 @@
     height: 3rem;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
+    width: 100%;
+    margin-right: 0;
 }
 .mobile-nav li a{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     padding:0;
-}
-
-.mobile-nav li a {
+    height: 100%;
+    width: 100%;
+    padding-right: 25px;
     text-decoration: none;
     font-size: 1.6rem;
     font-weight: bold;
