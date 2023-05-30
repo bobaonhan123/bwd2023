@@ -23,7 +23,7 @@ function MainPage() {
           <h1 className='title'>Tin tức</h1>
           <div className='news-pane'>
             {DataArr.map((data)=>{
-              return (<NewsComponent data={data}/>);
+              return (<NewsComponent key={data.id} data={data}/>);
                           })}
           </div>
           <a className='more' href='/News'>Xem thêm</a>
