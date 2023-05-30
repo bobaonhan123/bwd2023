@@ -10,6 +10,7 @@
 .news-component {
     width: 30%;
     height: 100%;
+    overflow: hidden;
 }
 
 .news-component>a{
@@ -33,6 +34,13 @@
     height: 150px;
     margin: 0 auto 15px auto;
     border-radius: 5px;
+    -webkit-transition: .3s ease-in;
+	transition: .3s ease-in;
+}
+
+.news-component>a:hover>img {
+    -webkit-transform: scale(1.1);
+	transform: scale(1.03);
 }
 
 .news-component .description {
