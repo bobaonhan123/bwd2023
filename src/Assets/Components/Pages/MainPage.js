@@ -32,6 +32,11 @@ function MainPage() {
           
         </div>
     </div>
+    
+
+    
+    
+    
   );
 }
 
