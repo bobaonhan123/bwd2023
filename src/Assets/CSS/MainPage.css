@@ -74,7 +74,20 @@
 }
 
 .prevention-page .image {
-  width: 35%;
+
+    width: 30%;
+    height: 35vh;
+    background: url('../Img/Fire.jpg');
+    background-size: cover;
+    border-radius: 10px;
+    -webkit-transition: .3s ease-in;
+	transition: .3s ease-in;
+}
+
+.prevention-page .image:hover {
+    -webkit-transform: scale(1.1);
+	transform: scale(1.1);
+
 }
 
 .prevention-page .prevention-content-pane > a {
@@ -193,4 +206,48 @@
     margin: inherit auto;
     width: 100%;
   }
+}
+
+
+@media only screen and (max-width: 800px) {
+    .intro-page .intro-contentpane {
+        margin: 150px auto;
+        width: 90%;
+    }
+
+    .intro-page .intro-contentpane h1,.prevention-page .prevention-content-pane h1 {
+        font-size: 2.4rem;
+        padding: 10px;
+        
+    }
+
+    .intro-page .intro-contentpane p,.prevention-page .prevention-content-pane p {
+        font-size: 1.6rem;
+        padding: 10px;
+    }
+    .news-pane {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        overflow: hidden;
+        height: 60vh;
+    }
+    .prevention-page .image {
+        display: none;
+    }
+    .prevention-page {
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+    .prevention-page .prevention-content-pane {
+        width: 95%;
+        overflow: hidden;
+    }
+    .prevention-page .prevention-content-pane>a {
+        margin: inherit auto;
+        width: 100%;
+    }
+    
 }
