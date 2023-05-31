@@ -99,10 +99,17 @@
     .title {
         font-size: 1.6rem;    
     }
+    .report_img_1{
+        width: 100%;
+        height: auto;
+    }
     .left-text,
     .right-text {
         width: 100%;    
         text-align: center;
+    }
+    .contact{
+        padding-bottom: 150px;
     }
     .description {
         font-size: 1.1rem;
@@ -115,15 +122,29 @@
 }
 @media only screen and (max-width: 1024px) {
     .left-text,
+    .report_img_1{
+        width: 100%;
+        height: auto;
+    }
+    .contact{
+        padding-bottom: 150px;
+    }
     .right-text {
       width: 100%;
       text-align: center;
-    }
+    }   
   }
 @media only screen and (max-width: 400px) {
     .title {
         font-size: 1.4rem;
         margin-bottom: 15px;    
+    }
+    .report_img_1{
+        width: 100%;
+        height: auto;
+    }
+    .contact{
+        padding-bottom: 150px;
     }
     .left-text,
     .right-text {
