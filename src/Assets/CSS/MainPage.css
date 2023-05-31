@@ -75,7 +75,18 @@
 }
 
 .prevention-page .image {
-    width: 35%;
+    width: 30%;
+    height: 35vh;
+    background: url('../Img/Fire.jpg');
+    background-size: cover;
+    border-radius: 10px;
+    -webkit-transition: .3s ease-in;
+	transition: .3s ease-in;
+}
+
+.prevention-page .image:hover {
+    -webkit-transform: scale(1.1);
+	transform: scale(1.1);
 }
 
 .prevention-page .prevention-content-pane>a {
@@ -180,7 +191,7 @@
         overflow: hidden;
         height: 60vh;
     }
-    .intro-page .image {
+    .prevention-page .image {
         display: none;
     }
     .prevention-page {

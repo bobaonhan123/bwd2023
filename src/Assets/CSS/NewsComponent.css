@@ -39,7 +39,7 @@
 }
 
 .news-component>a:hover>img {
-    -webkit-transform: scale(1.1);
+    -webkit-transform: scale(1.03);
 	transform: scale(1.03);
 }
 
@@ -47,7 +47,7 @@
     display: block;
     height: 16px*1.3*3;
     line-height: 1.3;
-    -webkit-line-clamp: 3;  /* số dòng hiển thị */
+    -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
