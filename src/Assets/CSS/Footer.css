@@ -12,6 +12,8 @@
     background-color:#b7f3b5;
     display: flex;
     flex-direction: column;
+    /* position: fixed;
+    bottom: 0px; */
 }
 
 .Footer>img {

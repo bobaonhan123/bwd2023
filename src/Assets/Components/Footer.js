@@ -42,7 +42,7 @@ function Footer() {
                   <p>{data.name}</p>
                   <div className='logo-list'>
                     <a href={data.facebook}><img src={fblogo} alt='fblogo'/></a>
-                    <a href={data.github}><img src={githublogo} alt='github'/></a>
+                    <a href={data.github}><img src={ githublogo} alt='github'/></a>
                   </div>
                 </div>
               </li>

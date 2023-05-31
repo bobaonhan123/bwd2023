@@ -1,18 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 .Header {
     display: flex;
     width: 100%;
-    height: 100px;
+    height: 60px;
     position: fixed;
-    top:0;
-    background: transparent;
+    top: 0;
+    /* background: transparent; */
+    /* background: rgba(49, 49, 49, 0.66); */
     border-bottom: 1px solid rgba(164, 164, 164, 0.397);
-    
+
     align-items: center;
     justify-content: space-around;
     transition: 0.3s;
@@ -47,22 +50,25 @@
 .Header img {
     width: 100px;
     height: 100px;
+    padding: 10px;
 }
 
-.Header .navbar>li:hover a,.Header .navbar>li a.curr-page,.Header .mobile-nav>li a.curr-page{
+.Header .navbar>li:hover a, .Header .navbar>li a.curr-page, .Header .mobile-nav>li a.curr-page {
     color: #2f9e44;
 }
 
-.Header .mobile-nav>li a.curr-page{
+.Header .mobile-nav>li a.curr-page {
     background-color: #01ff302b;
-    border-radius: 10px ;
+    border-radius: 10px;
 }
 
 .white-header {
     background: unset;
     background-color: white;
+    /* background-color: rgba(49, 49, 49, 0.66); */
+
     height: 70px;
-    
+
 }
 
 .white-header .navbar>li a {
@@ -114,11 +120,12 @@
     width: 100%;
     margin-right: 0;
 }
-.mobile-nav li a{
+
+.mobile-nav li a {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding:0;
+    padding: 0;
     height: 100%;
     width: 100%;
     padding-right: 25px;

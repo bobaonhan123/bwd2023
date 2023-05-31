@@ -1,6 +1,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+.about-us {
+    /* margin-top: 60px; */
+
+    height: 100vh;
+    width: 100%;
+    background: url('../Img/AboutUs_bg1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-size: cover;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    padding: 20px;
+    margin: 10vh auto;
+    width: 80%;
+    padding: 5%;   
+
+    text-align: center;
+    margin-top: 10vh;
+    color: white;
+    background: rgba(49, 49, 49, 0.66);
+    border-radius: 20px;
+    /* backdrop-filter: blur(5px); */
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+

@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -43,7 +44,7 @@
 }
 
 .intro-page .intro-contentpane p {
-    padding:20px;
+    padding: 20px;
     font-size: 2em;
     color: #fefefecc;
 }
@@ -82,7 +83,7 @@
     flex-wrap: wrap;
     overflow: hidden;
     height: 60vh;
-    
+
 }
 
 .news-page>a {
@@ -101,7 +102,7 @@
 }
 
 .news-page>a:hover {
-    background: linear-gradient(90deg, #f4791f,#659999);
+    background: linear-gradient(90deg, #f4791f, #659999);
 }
 
 
@@ -120,13 +121,14 @@
     .intro-page .intro-contentpane h1 {
         font-size: 2.4rem;
         padding: 10px;
-        
+
     }
 
     .intro-page .intro-contentpane p {
         font-size: 1.6rem;
         padding: 10px;
     }
+
     .news-pane {
         display: flex;
         flex-direction: row;
