@@ -1,4 +1,4 @@
-import logo from "../Img/logo.svg";
+import logo from "../Img/logo.png";
 import fblogo from "../Img/facebook-f.svg";
 import githublogo from "../Img/github.svg";
 import "../CSS/Footer.css";
