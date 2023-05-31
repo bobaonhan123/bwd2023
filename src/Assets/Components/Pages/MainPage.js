@@ -18,7 +18,15 @@ function MainPage() {
         </div>
         
         <div className='prevention-page'>
-          
+          <div className='prevention-content-pane'>
+            <div>
+              <h1>Chung tay bảo vệ rừng</h1>
+              <p>Hãy đóng góp cho công cuộc bảo vệ rừng của chúng ta, đó là nguồn sống của tất cả chúng ta và là một phần quan trọng của hệ sinh thái trái đất.</p>
+              
+            </div>
+            <Link to='/Report'>Báo cáo</Link>
+          </div>
+          <div className='image'></div>
         </div>
         <div className='news-page'>
           <h1 className='title'>Tin tức</h1>

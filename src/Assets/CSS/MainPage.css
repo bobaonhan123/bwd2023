@@ -46,7 +46,7 @@
 
 .intro-page .intro-contentpane p {
     padding:20px;
-    font-size: 2em;
+    font-size: 2rem;
     color: #fefefecc;
 }
 
@@ -54,8 +54,49 @@
     width: 100%;
     height: 100vh;
     background-color: #f4f4f4;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
+.prevention-page .prevention-content-pane {
+    width: 55%;
+}
+
+.prevention-page .prevention-content-pane h1 {
+    text-transform: uppercase;
+    font-size: 3rem;
+    padding: 1rem 2rem;
+}
+
+.prevention-page .prevention-content-pane p {
+    font-size: 2rem;
+    padding: 1rem 2rem;
+}
+
+.prevention-page .image {
+    width: 35%;
+}
+
+.prevention-page .prevention-content-pane>a {
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    height: 60px;
+    width: 300px;
+    font-weight: bold;
+    color: white;
+    background-color: #4b4b4bce;
+    transition: 0.5s;
+    border-radius: 5px;
+    margin: 50px 10px 10px auto;
+}
+
+.prevention-page .prevention-content-pane>a:hover {
+    background: linear-gradient(90deg, #f4791f,#659999);
+}
 
 .news-page {
     width: 100%;
@@ -96,7 +137,7 @@
     text-transform: uppercase;
     height: 50px;
     width: 200px;
-    font-size: bold;
+    font-weight: bold;
     color: white;
     background-color: #4b4b4bce;
     transition: 0.5s;
@@ -120,13 +161,13 @@
         width: 90%;
     }
 
-    .intro-page .intro-contentpane h1 {
+    .intro-page .intro-contentpane h1,.prevention-page .prevention-content-pane h1 {
         font-size: 2.4rem;
         padding: 10px;
         
     }
 
-    .intro-page .intro-contentpane p {
+    .intro-page .intro-contentpane p,.prevention-page .prevention-content-pane p {
         font-size: 1.6rem;
         padding: 10px;
     }
@@ -139,4 +180,20 @@
         overflow: hidden;
         height: 60vh;
     }
+    .intro-page .image {
+        display: none;
+    }
+    .prevention-page {
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+    .prevention-page .prevention-content-pane {
+        width: 95%;
+        overflow: hidden;
+    }
+    .prevention-page .prevention-content-pane>a {
+        margin: inherit auto;
+        width: 100%;
+    }
+    
 }
