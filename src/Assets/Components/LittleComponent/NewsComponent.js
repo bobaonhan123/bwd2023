@@ -2,7 +2,7 @@ import '../../CSS/NewsComponent.css';
 function NewsComponent({data}) {
   return (
     <div className="news-component">
-      <a href={data.URL}>
+      <a href={data.URL} target='blank'>
        <img src={data.imageURL} alt=""/>
        <h2>{data.title}</h2>
        <div className='description'>{data.description}</div>
