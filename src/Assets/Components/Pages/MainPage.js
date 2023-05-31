@@ -2,6 +2,7 @@
 import '../../CSS/MainPage.css';
 import NewsComponent from '../LittleComponent/NewsComponent';
 import NewsData from '../../Data/NewsData';
+import { Link } from 'react-router-dom';
 
 function MainPage() {
     const DataArr=NewsData();
@@ -26,7 +27,7 @@ function MainPage() {
               return (<NewsComponent key={data.id} data={data}/>);
                           })}
           </div>
-          <a className='more' href='/News'>Xem thêm</a>
+          <Link className='more' to='/News'>Xem thêm</Link>
         </div>
         <div className='contact-page'>
           
