@@ -20,7 +20,7 @@ function MainPage() {
   };
   return (
     <div className="main-page">
-      <div className={activeIndex === 1 ? 'intro-img intro-img2' : 'intro-img'}></div>
+      <div className={activeIndex === 1 ? 'intro-img intro-img2' : activeIndex === 0 ? 'intro-img': 'intro-img intro-img3'}></div>
       <Swiper
         ref={swiper}
         spaceBetween={50}
@@ -45,6 +45,14 @@ function MainPage() {
             <div className='intro-contentpane'>
               <h1>Tầm quan trọng</h1>
               <p>Rừng là một phần quan trọng của hệ sinh thái trái đất. Chúng tạo ra môi trường sống cho nhiều loài động thực vật.</p>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className='intro-page'>
+            <div className='intro-contentpane'>
+              <h1>Cháy rừng</h1>
+              <p>Cháy rừng là một trong những hiểm họa lớn nhất đối với môi trường và con người. Nó có thể gây ra những thiệt hại nghiêm trọng.</p>
             </div>
           </div>
         </SwiperSlide>
