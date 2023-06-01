@@ -49,6 +49,7 @@ function Header() {
     setLink2(window.location.pathname.includes("/News") ? "curr-page" : "");
     setLink3(window.location.pathname.includes("/Report") ? "curr-page" : "");
     setLink4(window.location.pathname.includes("/about-us") ? "curr-page" : "");
+    window.scrollTo(0,0);
   }, [CurrLink]);
   return (
     <div className={HeaderClass}>

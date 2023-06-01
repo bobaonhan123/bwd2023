@@ -1,7 +1,9 @@
 
+import { useState } from 'react';
 import '../../CSS/Report.css';
 
 const Report = () => {
+  
     return (
       <div>
         <div className="report" >

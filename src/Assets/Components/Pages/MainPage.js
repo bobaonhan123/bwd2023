@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom';
 
 function MainPage() {
   const DataArr = NewsData();
-
   return (
     <div className="main-page">
       <div className='intro-img'></div>
