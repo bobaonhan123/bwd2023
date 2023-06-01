@@ -1,3 +1,4 @@
+import {memo} from 'react'
 import '../../CSS/AboutUs.css';
 
 function AboutUs() {
@@ -28,4 +29,4 @@ function AboutUs() {
     );
 }
 
-export default AboutUs;
+export default memo(AboutUs);

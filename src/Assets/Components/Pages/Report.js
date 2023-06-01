@@ -1,5 +1,4 @@
-
-import { useState } from 'react';
+import {memo} from 'react'
 import '../../CSS/Report.css';
 
 const Report = () => {
@@ -52,4 +51,4 @@ const Report = () => {
     )
 }
 
-export default Report
+export default memo(Report);
