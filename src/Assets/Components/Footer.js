@@ -1,63 +1,76 @@
-import logo from "../Img/logo.png";
-import fblogo from "../Img/facebook-f.svg";
-import githublogo from "../Img/github.svg";
-import "../CSS/Footer.css";
+import '../CSS/Footer.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGitSquare, faFacebookSquare, faYoutubeSquare, faInstagramSquare } from '@fortawesome/free-brands-svg-icons';
 
 function Footer() {
-  let dataArr = [
-    {
-      id: "1",
-      name: "Bit0",
-      facebook: "https://www.facebook.com/hosybaonhan",
-      github: "https://github.com/bobaonhan123",
-    },
-    {
-      id: "2",
-      name: "JustA",
-      facebook: "https://www.facebook.com/JustA707",
-      github: "https://github.com/JustAG7",
-    },
-    {
-      id: "3",
-      name: "tin12q",
-      facebook: "https://www.facebook.com/ting12q",
-      github: "https://github.com/vkutin12q",
-    },
-    {
-      id: "4",
-      name: "phuquocchamp",
-      facebook: "https://www.facebook.com/fbhoangtanphuquoc",
-      github: "https://github.com/phuquocchamp",
-    },
-  ];
-  return (
-    <div className="Footer">
-      <img src={logo} alt="logo" />
-      <ul>
-        {dataArr.map((data) => {
-          return (
-            <li key={data.id}>
-              <div className="personal-component">
-                <p>{data.name}</p>
-                <div className="logo-list">
-                  <a href={data.facebook} target="blank">
-                    <img src={fblogo} alt="fblogo" />
-                  </a>
-                  <a href={data.github} target="blank">
-                    <img src={githublogo} alt="github" />
-                  </a>
+    return (
+        <footer className="footer">
+            <div className="footer__container">
+                {/* Project Informartion */}
+                <div className="project__info">
+                    <h3>FireWing</h3>
+                    <p>
+                        FireWing là một trang web được phát triển bởi các sinh viên VKU với mục tiêu cung cấp thông tin
+                        và dự báo về cháy rừng sử dụng công nghệ AI.
+                    </p>
+                    <div class="social">
+                        <FontAwesomeIcon icon={faGitSquare} />
+                        <FontAwesomeIcon icon={faFacebookSquare} />
+                        <FontAwesomeIcon icon={faYoutubeSquare} />
+                        <FontAwesomeIcon icon={faInstagramSquare} />
+                    </div>
                 </div>
-              </div>
-            </li>
-          );
-        })}
-      </ul>
-      <p>
-        Copyright © 2023 - Vietnam-Korea University of Information and
-        Communication Technology - The University of Danang
-      </p>
-    </div>
-  );
+                {/* Related Information */}
+                <div className="related__info">
+                    <h3>Related Information</h3>
+                    <ul>
+                        <li>
+                            <a href="#faq">F.A.Q</a>
+                        </li>
+                        <li>
+                            <a href="#cookies-policy">Cookies Policy</a>
+                        </li>
+                        <li>
+                            <a href="#terms-of-services">Terms Of Service</a>
+                        </li>
+                        <li>
+                            <a href="#support">Support</a>
+                        </li>
+                    </ul>
+                </div>
+                <div className="related__info">
+                    <h3 className='heading'>Information</h3>
+                    <ul>
+                        <li>
+                            <a href="#faq">F.A.Q</a>
+                        </li>
+                        <li>
+                            <a href="#cookies-policy">Cookies Policy</a>
+                        </li>
+                        <li>
+                            <a href="#terms-of-services">Terms Of Service</a>
+                        </li>
+                        <li>
+                            <a href="#support">Support</a>
+                        </li>
+                    </ul>
+                </div>
+                {/* Feedback Form */}
+                <div className="feedback__section">
+                    <h3 className='heading'>Newsletter</h3>
+                    <div>
+                        <input type="email" placeholder="Your email id here" />
+                        <button>Subscribe</button>
+                    </div>
+                </div>
+            </div>
+
+            <p className="footer__copyright">
+                Copyright © 2023 - Vietnam-Korea University of Information and Communication Technology - The University
+                of Danang
+            </p>
+        </footer>
+    );
 }
 
 export default Footer;
