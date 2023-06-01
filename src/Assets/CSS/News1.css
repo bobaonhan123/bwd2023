@@ -180,4 +180,7 @@ blockquote::before {
   .lists {
     grid-template-columns: 1fr;
   }
+  article {
+    columns: 1;
+  }
 }
