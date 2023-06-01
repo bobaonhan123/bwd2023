@@ -43,7 +43,7 @@ img {
 .right-text{
     font-size: 1.2rem;
     width: 45%;
-    text-align: right;
+    text-align: left;
     justify-content: space-between;
     line-height: 35px;
 }
