@@ -5,6 +5,8 @@
   box-sizing: border-box;
 }
 
+html,body{ scroll-behavior: smooth}
+
 .Header {
   display: flex;
   width: 100%;

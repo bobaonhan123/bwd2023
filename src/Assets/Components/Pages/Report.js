@@ -1,6 +1,8 @@
+import {memo} from 'react'
 import '../../CSS/Report.css';
 
 const Report = () => {
+  
     return (
         <div>
             <div className="report">
@@ -71,4 +73,4 @@ const Report = () => {
     );
 };
 
-export default Report;
+export default memo(Report);

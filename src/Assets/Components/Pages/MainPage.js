@@ -1,21 +1,54 @@
+import {memo} from 'react'
+import { useState, useRef } from 'react';
+import { Link } from 'react-router-dom';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/swiper-bundle.min.css';
 
 import '../../CSS/MainPage.css';
 import NewsComponent from '../LittleComponent/NewsComponent';
 import NewsData from '../../Data/NewsData';
-import { Link } from 'react-router-dom';
+import SwiperCore, { Navigation, Pagination, Autoplay } from 'swiper';
+
+SwiperCore.use([Navigation, Pagination,Autoplay]);
 
 function MainPage() {
   const DataArr = NewsData();
-
+  const swiper = useRef(null);
+  const [activeIndex, setActiveIndex] = useState(0);
+  const handleSlideChange = (swiper) => {
+    setActiveIndex(swiper.realIndex);
+  };
   return (
     <div className="main-page">
-      <div className='intro-img'></div>
-      <div className='intro-page'>
-        <div className='intro-contentpane'>
-          <h1>Bảo vệ rừng</h1>
-          <p>Hãy bảo vệ rừng của chúng ta, đó là nguồn sống của tất cả chúng ta và là một phần quan trọng của hệ sinh thái trái đất.</p>
-        </div>
-      </div>
+      <div className={activeIndex === 1 ? 'intro-img intro-img2' : 'intro-img'}></div>
+      <Swiper
+        ref={swiper}
+        spaceBetween={50}
+        slidesPerView={1}
+        navigation
+        pagination={{ clickable: true }}
+        loop
+        autoplay={{ delay: 5000 }}
+        direction='horizontal'
+        onSlideChange={handleSlideChange}
+      >
+        <SwiperSlide>
+          <div className='intro-page'>
+            <div className='intro-contentpane'>
+              <h1>Bảo vệ rừng</h1>
+              <p>Hãy bảo vệ rừng của chúng ta, đó là nguồn sống của tất cả chúng ta và là một phần quan trọng của hệ sinh thái trái đất.</p>
+            </div>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+          <div className='intro-page'>
+            <div className='intro-contentpane'>
+              <h1>Tầm quan trọng</h1>
+              <p>Rừng là một phần quan trọng của hệ sinh thái trái đất. Chúng tạo ra môi trường sống cho nhiều loài động thực vật.</p>
+            </div>
+          </div>
+        </SwiperSlide>
+      </Swiper>
 
       <div className='prevention-page'>
         <div className='prevention-content-pane'>
@@ -57,4 +90,4 @@ function MainPage() {
   );
 }
 
-export default MainPage;
+export default memo(MainPage);

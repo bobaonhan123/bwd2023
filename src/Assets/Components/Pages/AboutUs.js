@@ -1,3 +1,4 @@
+import {memo} from 'react'
 import '../../CSS/AboutUs.css';
 import CarouselSwiper from '../LittleComponent/CarouselSwiper';
 
@@ -36,4 +37,4 @@ function AboutUs() {
     );
 }
 
-export default AboutUs;
+export default memo(AboutUs);
