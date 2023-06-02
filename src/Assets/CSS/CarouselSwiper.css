@@ -4,6 +4,7 @@
 }
 
 .carousel__slide {
+    padding: 20%;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -11,7 +12,7 @@
     /* margin: 10em; */
     /* padding: 100px 100px; */
     color: black;
-    /* background: rgba(187, 187, 187, 0.329) */
+    background: rgba(187, 187, 187, 0.329)
 }
 
 .avatar {
@@ -29,9 +30,11 @@
 .member__info {
     text-align: center;
     margin-left: 10%;
+    width: 50%;
 }
 
 .member__name {
+    text-align: center;
     font-size: 24px;
     font-weight: bold;
 }
@@ -50,7 +53,7 @@
 
 .social__icons a {
     display: inline-block;
-    margin-right: 30px;
+    margin: 30px;
     color: #333;
     font-size: 50px;
     transition: color 0.3s ease;
@@ -78,6 +81,12 @@
         font-size: 20px;
     }
 
+    .member__info {
+        margin-left: unset;
+        margin: 10%;
+
+    }
+
     .member__info>p {
         font-size: 14px;
     }
@@ -101,11 +110,18 @@
         font-size: 18px;
     }
 
+    .member__info {
+        margin-left: unset;
+        margin: 10%;
+
+    }
+
     .member__info>p {
         font-size: 12px;
     }
 
     .social__icons a {
         font-size: 30px;
+        margin-right: unset;
     }
 }
