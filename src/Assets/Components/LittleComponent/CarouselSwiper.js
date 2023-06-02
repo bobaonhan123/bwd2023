@@ -11,7 +11,7 @@ import 'swiper/css/navigation';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faFacebook } from '@fortawesome/free-brands-svg-icons';
-import SwiperCore, { Navigation, Pagination, Autoplay/*, EffectCoverflow */} from 'swiper';
+import SwiperCore, { Navigation, Pagination, Autoplay /*, EffectCoverflow */ } from 'swiper';
 
 SwiperCore.use([Navigation, Pagination, Autoplay]);
 
@@ -21,7 +21,7 @@ const CarouselSwiper = () => {
             id: 1,
             name: 'Hoàng Tấn Phú Quốc',
             studentId: '22IT239',
-            introduction: 'Em yêu VKU VCL',
+            introduction: 'Bảo vệ rừng, bảo vệ môi trường - Lí tưởng vì tương lai bền vững.',
             facebook: 'https://www.facebook.com/fbhoangtanphuquoc',
             github: 'https://github.com/phuquocchamp',
             avatar: 'external/phuquocchamp.jpg',
@@ -39,7 +39,8 @@ const CarouselSwiper = () => {
             id: 3,
             name: 'Hồ Sỹ Bảo Nhân',
             studentId: '22IT198',
-            introduction: 'Tôi luôn tin rằng việc bảo vệ rừng không chỉ giúp bảo tồn môi trường mà còn bảo vệ sự sống và tương lai của chính chúng ta.',
+            introduction:
+                'Tôi luôn tin rằng việc bảo vệ rừng không chỉ giúp bảo tồn môi trường mà còn bảo vệ sự sống và tương lai của chính chúng ta.',
             facebook: 'https://www.facebook.com/hosybaonhan',
             github: 'https://github.com/bobaonhan123',
             avatar: 'external/Bit0.jpg',
