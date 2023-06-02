@@ -3,10 +3,15 @@ import 'swiper/swiper-bundle.css';
 import 'swiper/css/autoplay';
 import '../../CSS/CarouselSwiper.css';
 
+import 'swiper/css';
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faFacebook } from '@fortawesome/free-brands-svg-icons';
-import SwiperCore, { Navigation, Pagination, Autoplay } from 'swiper';
+import SwiperCore, { Navigation, Pagination, Autoplay, EffectCoverflow } from 'swiper';
 
 SwiperCore.use([Navigation, Pagination, Autoplay]);
 
@@ -59,7 +64,7 @@ const CarouselSwiper = () => {
             slidesPerView={1}
             navigation
             pagination={{ clickable: true }}
-            effect="cube"
+            effect="coverflow"
             autoplay={{ delay: 2500 }} // Tự động chuyển slide sau 3 giây
             loop
         >
@@ -70,7 +75,7 @@ const CarouselSwiper = () => {
                             <img src={member.avatar} alt="Avatar" />
                         </div>
                         <div className="member__info">
-                            <h3>{member.name}</h3>
+                            <h3 className="member__name">{member.name}</h3>
                             <p>Mã sinh viên: {member.studentId}</p>
                             <p>{member.introduction}</p>
                             <div className="social__icons">

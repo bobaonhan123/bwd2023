@@ -1,82 +1,177 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
 * {
-    margin: 0;
-    padding: 0;
+    font-family: "Poppins", sans-serif;
     box-sizing: border-box;
-    list-style: none;
+    border: none;
+    outline: none;
 }
 
-.Footer {
-    width: 100%;
-    height: 350px;
-    background-color:#b7f3b5;
+.footer {
+    padding: 0;
+    margin: 0;
     display: flex;
     flex-direction: column;
-    /* position: fixed;
-    bottom: 0px; */
+    align-items: flex-end;
+    background-color: #35415a;
+    color: #a7a7a7;
+    font-size: 16px;
 }
 
-.Footer>img {
-    width: 100px;
-    height: 100px;
-    margin-left: 10%;
+.footer__container {
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
 }
 
-.Footer>ul {
-    height: 200px;
+.project__info {
+    padding-left: 1em;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    /* align-items: center; */
+}
+
+.heading {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 1.4em;
+    white-space: nowrap;
+    margin-bottom: 1em;
+}
+
+p {
+    width: 90%;
+    padding: 1em 0 0 0;
+}
+
+div.social {
     display: flex;
     justify-content: space-around;
+    font-size: 2.4em;
+    flex-direction: row;
+    margin-top: 0.5em;
+    margin-left: -0.5em;
+    width: 90%;
 }
 
-.Footer>p {
-    text-align: center;
+.social FontAwesomeIcon {
+    color: #bac6d9;
 }
 
-.Footer>ul>li .personal-component {
+.related__info>ul {
     list-style: none;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    width: 200px;
+    padding: 0;
+    margin: 0;
+    align-items: center;
 }
 
-.Footer>ul>li .personal-component .logo-list {
+.related__info>ul>li {
+    margin-top: 0.8em;
+}
+
+.related__info>ul li a {
+    color: #a7a7a7;
+    text-decoration: none;
+}
+
+.related__info>ul li a:hover {
+    color: #2a8ded;
+}
+
+.feedback__section {
     display: flex;
-    flex-direction: row;
-    justify-content:center;
+    flex-direction: column;
 }
 
-.Footer>ul>li .personal-component p {
-    font-size: 1.5rem;
+input,
+button {
+    font-size: 1em;
+    padding: 1em;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    margin: 0.5em;
+}
+
+button {
+    background-color: #c7940a;
+    color: #ffffff;
+}
+
+.footer__copyright {
+    /* height: 3em; */
+    width: 100%;
+    font-size: 0.9em;
     text-align: center;
+    /* margin-right: 2em; */
+    padding: 0.3em 1em;
+    background-color: #25262e;
 }
 
-.Footer>ul>li .personal-component .logo-list img {
-    width: 30px;
-    height: 30px;
-    margin: 10px;
+/* Media Queries */
+@media (max-width: 768px) {
+    .footer__container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project__info {
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+    .heading {
+        text-align: center;
+    }
+
+    .social {
+        justify-content: center;
+        margin-left: unset;
+
+    }
+
+    .related__info>ul {
+        align-items: center;
+    }
 }
 
-@media only screen and (max-width: 600px) {
-    .Footer>ul {
-        flex-wrap: wrap;
-        
+@media (max-width: 576px) {
+    .footer__container {
+        padding: 1em;
+        margin: 1em;
     }
 
-    .Footer>ul li .personal-component {
-        width: 150px;
+    .project__info {
+        padding-left: unset;
+        width: 100%;
+        text-align: center;
     }
 
-    .Footer>ul li {
-        width: 150px;
-    }
-    .Footer>ul li .personal-component p {
-        font-size: 1.1rem;
-        width: 150px;
+    .heading {
+        font-size: 1.2em;
     }
 
-    .Footer>ul>li .personal-component .logo-list {
-        width: 150px;
+    .p {
+        width: 100%;
+        padding: 1em 0;
     }
 
+    div.social {
+        font-size: 2em;
+        margin-left: unset;
+    }
+
+    .related__info>ul li {
+        margin-top: 0.5em;
+    }
+
+    input,
+    button {
+        font-size: 0.9em;
+        padding: 0.8em;
+    }
 }
