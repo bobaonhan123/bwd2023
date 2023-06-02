@@ -30,10 +30,10 @@ const CarouselSwiper = () => {
             id: 2,
             name: 'Võ Thanh Phong',
             studentId: '22IT222',
-            introduction: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            introduction: 'Mãi một lòng yêu trường VKU không bao giờ mai một.',
             facebook: 'https://www.facebook.com/JustA707',
             github: 'https://github.com/JustAG7',
-            avatar: 'external/phuquocchamp.jpg',
+            avatar: 'external/JustA.jpg',
         },
         {
             id: 3,
