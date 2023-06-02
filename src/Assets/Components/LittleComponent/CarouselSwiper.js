@@ -49,10 +49,10 @@ const CarouselSwiper = () => {
             id: 4,
             name: 'Nguyễn Phú Thịnh',
             studentId: '22IT280',
-            introduction: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            introduction: 'Sinh viên là những người trẻ tuổi tràn đầy nhiệt huyết và trách nhiệm, họ có trách nhiệm bảo vệ rừng để gìn giữ cho tương lai của chúng ta xanh tươi và bền vững hơn..',
             facebook: 'https://www.facebook.com/ting12q',
             github: 'https://github.com/vkutin12q',
-            avatar: 'external/phuquocchamp.jpg',
+            avatar: 'external/tin12q.jpg',
         },
         // Thêm các thành viên khác vào đây
     ];
