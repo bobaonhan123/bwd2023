@@ -11,7 +11,7 @@ import 'swiper/css/navigation';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faFacebook } from '@fortawesome/free-brands-svg-icons';
-import SwiperCore, { Navigation, Pagination, Autoplay, EffectCoverflow } from 'swiper';
+import SwiperCore, { Navigation, Pagination, Autoplay/*, EffectCoverflow */} from 'swiper';
 
 SwiperCore.use([Navigation, Pagination, Autoplay]);
 
