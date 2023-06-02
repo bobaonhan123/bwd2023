@@ -20,8 +20,10 @@
   padding-top: 20px;
 }
 
-.container {
-  max-width: 1200px;
+.News .container  {
+  max-width: 1400px;
+  margin-left: -2vw;
+  margin-right: -2vw;
 }
 
 .heading-1 {
