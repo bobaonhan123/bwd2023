@@ -33,8 +33,8 @@ const CarouselSwiper = () => {
         {
             id: 3,
             name: 'Hồ Sỹ Bảo Nhân',
-            studentId: '22IT',
-            introduction: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            studentId: '22IT198',
+            introduction: 'Tôi luôn tin rằng việc bảo vệ rừng không chỉ giúp bảo tồn môi trường mà còn bảo vệ sự sống và tương lai của chính chúng ta.',
             facebook: 'https://www.facebook.com/hosybaonhan',
             github: 'https://github.com/bobaonhan123',
             avatar: 'external/phuquocchamp.jpg',
@@ -61,6 +61,7 @@ const CarouselSwiper = () => {
             pagination={{ clickable: true }}
             effect="cube"
             autoplay={{ delay: 2500 }} // Tự động chuyển slide sau 3 giây
+            loop
         >
             {members.map((member) => (
                 <SwiperSlide key={member.id}>
