@@ -36,7 +36,7 @@ function MainPage() {
           <div className='intro-page'>
             <div className='intro-contentpane'>
               <h1>Bảo vệ rừng</h1>
-              <p>Hãy bảo vệ rừng của chúng ta, đó là nguồn sống của tất cả chúng ta và là một phần quan trọng của hệ sinh thái trái đất.</p>
+              <p>“Hãy bảo vệ rừng của chúng ta, đó là nguồn sống của tất cả chúng ta và là một phần quan trọng của hệ sinh thái trái đất.”</p>
             </div>
           </div>
         </SwiperSlide>
@@ -44,7 +44,7 @@ function MainPage() {
           <div className='intro-page'>
             <div className='intro-contentpane'>
               <h1>Tầm quan trọng</h1>
-              <p>Rừng là một phần quan trọng của hệ sinh thái trái đất. Chúng tạo ra môi trường sống cho nhiều loài động thực vật.</p>
+              <p>“Rừng là một phần quan trọng của hệ sinh thái trái đất. Chúng tạo ra môi trường sống cho nhiều loài động thực vật.”</p>
             </div>
           </div>
         </SwiperSlide>

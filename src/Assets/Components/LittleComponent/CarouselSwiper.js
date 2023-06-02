@@ -42,7 +42,7 @@ const CarouselSwiper = () => {
             introduction: 'Tôi luôn tin rằng việc bảo vệ rừng không chỉ giúp bảo tồn môi trường mà còn bảo vệ sự sống và tương lai của chính chúng ta.',
             facebook: 'https://www.facebook.com/hosybaonhan',
             github: 'https://github.com/bobaonhan123',
-            avatar: 'external/phuquocchamp.jpg',
+            avatar: 'external/Bit0.jpg',
         },
         {
             id: 4,
